@@ -4,7 +4,7 @@ t = int(input())
 a, b, c = 0, 0, 0
 
 while t >= 10:
-    if t > 300:
+    if t >= 300:
         a += t // 300
         t = t % 300
     elif t >= 60:
