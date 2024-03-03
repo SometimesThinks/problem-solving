@@ -12,17 +12,17 @@ for _ in range(n):
         male[y] += 1
 
 for fe in female[1:]:
-    if fe and fe > k:
+    if fe and fe % k > 0:
         total_rooms += (fe // k + 1)
-    elif fe and fe == k:
+    elif fe and fe % k == 0:
         total_rooms += fe // k
     elif fe:
         total_rooms += 1
 
 for ma in male[1:]:
-    if ma and ma > k:
+    if ma and ma % k > 0:
         total_rooms += (ma // k + 1)
-    elif ma and ma == k:
+    elif ma and ma % k == 0:
         total_rooms += ma // k
     elif ma:
         total_rooms += 1
