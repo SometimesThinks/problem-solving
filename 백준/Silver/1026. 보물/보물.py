@@ -1,0 +1,10 @@
+n = int(input())
+a = sorted(list(map(int, input().split())))
+b = list(map(int, input().split()))
+new_b = sorted(b, reverse=True)
+s = 0
+
+for i in range(n):
+    s += a[i] * new_b[i]
+
+print(s)
