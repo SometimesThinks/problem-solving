@@ -14,7 +14,7 @@ nations.sort((arr1, arr2) => {
   return arr2[1] - arr1[1];
 });
 for (let i = 0; i < n; i++) {
-  rankings.push([nations[i][0], 0]);
+  rankings.push([nations[i][0], 1]);
 }
 for (let i = 1; i < n; i++) {
   const [num1, g1, s1, b1] = nations[i - 1];
